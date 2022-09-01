@@ -1,0 +1,23 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "type": "cmake",
+      "label": "build all",
+      "command": "build",
+      "targets": ["ALL_BUILD"],
+      "group": "build",
+      "problemMatcher": [],
+      "detail": "build all"
+    },
+    {
+      "type": "cmake",
+      "label": "build crud_test",
+      "command": "build",
+      "targets": ["crud_test"],
+      "group": "build",
+      "problemMatcher": [],
+      "detail": "build crud_test"
+    }
+  ]
+}

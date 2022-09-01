@@ -513,3 +513,7 @@ if(LEVELDB_INSTALL)
     DESTINATION "${CMAKE_INSTALL_LIBDIR}/cmake/${PROJECT_NAME}"
   )
 endif(LEVELDB_INSTALL)
+
+add_executable(crud_test)
+target_sources(crud_test PRIVATE "examples/crud_test.cpp")
+target_link_libraries(crud_test leveldb)
